@@ -14,6 +14,7 @@ public class Play : MonoBehaviour
     [SerializeField] private GameObject food;
     [SerializeField] private GameObject uiPanel;
     [SerializeField] private GameObject uiButton;
+    [SerializeField] private GameObject drinkSelectButtons;
 
     public void StartChapter()
     {
@@ -22,6 +23,7 @@ public class Play : MonoBehaviour
         StartCoroutine(Fade(true));
         StartCoroutine(Fade(false));
         uiButton.SetActive(false);
+        drinkSelectButtons.SetActive(true);
     }
 
     private IEnumerator TurnOnVendingMachine()
