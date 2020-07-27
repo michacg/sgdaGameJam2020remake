@@ -14,7 +14,7 @@ public class ChapterManager : MonoBehaviour
     // Start is called before the first frame update
 
     void Awake()
-    {
+    {   
         instance = this;
         CameraMovement.FinishedMoving += ActivateNextPanel;
     }
@@ -34,6 +34,7 @@ public class ChapterManager : MonoBehaviour
     {
         Debug.Log("Activating");
         Panels[index].GetComponent<Panel>().Activate();
+        print(index);   
     }
 
 }

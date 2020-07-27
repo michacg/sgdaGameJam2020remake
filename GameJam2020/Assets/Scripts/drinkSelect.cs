@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class drinkSelect : MonoBehaviour
 {
-    SpriteRenderer sprite;
-
+    [SerializeField] private SpriteRenderer sprite;
     private void Awake()
     {
         sprite = GetComponent<SpriteRenderer>();
@@ -19,7 +18,8 @@ public class drinkSelect : MonoBehaviour
             if (Input.GetMouseButton(0))
             {
                 sprite.color = new Color(1, 1, 1, 0.5f);
-                print("go to next scene");
+                ChapterManager.instance.NextPanel();
+
             }
             else
             {
