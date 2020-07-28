@@ -2,7 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface Panel
+public class Panel: MonoBehaviour
 {
-    void Activate();
+    public delegate void Focused();
+    public Focused OnPanel;
+
+
+    public void Activate()
+    {
+        if(OnPanel != null)
+        {
+            OnPanel.Invoke();
+        }
+    }
 }
