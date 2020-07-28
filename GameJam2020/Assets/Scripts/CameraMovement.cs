@@ -18,7 +18,6 @@ public class CameraMovement : MonoBehaviour
     public void InitialFrame(Vector3 pos)
     {
         this.transform.position = new Vector3(pos.x, pos.y, this.transform.position.z);
-        FinishedMoving.Invoke();
     }
 
     public void MoveCameraToNextPanel(Vector3 pos)
@@ -43,6 +42,11 @@ public class CameraMovement : MonoBehaviour
         this.transform.position = target;
         transitioning = false;
 
+        FinishedMoving.Invoke();
+    }
+
+    public void StartChapter()
+    {
         FinishedMoving.Invoke();
     }
 
