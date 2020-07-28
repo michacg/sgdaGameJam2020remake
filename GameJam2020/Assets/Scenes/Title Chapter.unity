@@ -589,8 +589,9 @@ GameObject:
   m_Component:
   - component: {fileID: 296542356}
   - component: {fileID: 296542355}
+  - component: {fileID: 296542357}
   m_Layer: 0
-  m_Name: MC1
+  m_Name: Xeth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -655,12 +656,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 296542354}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.16999912, y: -0.21000004, z: -2}
+  m_LocalPosition: {x: -0.16999912, y: -0.21000004, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1920103998}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &296542357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296542354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4425da49740c0d44d9ff09aede0f0f8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: c2aa2be4ebb68ac48a4f12103afd9771, type: 3}
+  - {fileID: 21300000, guid: ff71492ad7cd4d24c99db92f44cbca00, type: 3}
+  - {fileID: 21300000, guid: 8b370e81c29227549b42e3d7badc5cf4, type: 3}
+  timeBetweenSprites: 0.2
 --- !u!1 &338149259
 GameObject:
   m_ObjectHideFlags: 0
@@ -3444,7 +3462,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1543850234}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.14289188, y: -0.1800003, z: -2}
+  m_LocalPosition: {x: -0.14289188, y: -0.1800003, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1920103998}
@@ -4287,4 +4305,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3977e68f879f4046ac92257551032e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnPanel: 0
