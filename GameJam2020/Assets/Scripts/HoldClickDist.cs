@@ -18,7 +18,6 @@ public class HoldClickDist : HoldClick
     // Start is called before the first frame update
     void Awake()
     {
-        GetComponentInParent<Panel>().OnPanel += Activate;
         HideAllEndObjects();
         OrigX = MovingObject.transform.position.x;
         OrigY = MovingObject.transform.position.y;

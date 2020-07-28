@@ -7,15 +7,23 @@ public class MakeStuffAppear : MonoBehaviour
     [SerializeField] GameObject[] stuff;
     private int i = 0;
 
+    bool OnPanel = false;
+
+    private void Awake()
+    {
+        GetComponentInParent<Panel>().OnPanel += Activate;
+    }
+
     private void Update()
     {
 
-        if (Input.anyKeyDown)
+        if (Input.anyKeyDown && OnPanel)
         {
             // If all objects are present
             if (i == (stuff.Length))
             {
                 ChapterManager.instance.NextPanel();
+                OnPanel = false;
             }
             else
             {
@@ -23,6 +31,11 @@ public class MakeStuffAppear : MonoBehaviour
                 i++;
             }
         }
+    }
+
+    void Activate()
+    {
+        OnPanel = true;
     }
 
 }
