@@ -15,9 +15,10 @@ public class drinkSelect : MonoBehaviour
         // IF ramen cup
         if (gameObject.CompareTag("Progression"))
         {
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButtonDown(0))
             {
                 sprite.color = new Color(1, 1, 1, 0.5f);
+                Debug.Log("Hello: " + this.gameObject.name);
                 ChapterManager.instance.NextPanel();
 
             }

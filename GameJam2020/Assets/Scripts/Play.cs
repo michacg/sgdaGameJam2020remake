@@ -16,7 +16,12 @@ public class Play : MonoBehaviour
     [SerializeField] private GameObject uiButton;
     [SerializeField] private GameObject drinkSelectButtons;
 
-    public void StartChapter()
+    private void Awake()
+    {
+        GetComponentInParent<Panel>().OnPanel += Activate;
+    }
+
+    public void Activate()
     {
         StartCoroutine(TurnOnVendingMachine());
 

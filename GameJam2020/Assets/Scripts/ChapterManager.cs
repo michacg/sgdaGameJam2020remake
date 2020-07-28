@@ -27,6 +27,7 @@ public class ChapterManager : MonoBehaviour
 
     public void NextPanel()
     {
+        Debug.Log(index);
         cam.MoveCameraToNextPanel(Panels[++index].transform.position);
     }
 

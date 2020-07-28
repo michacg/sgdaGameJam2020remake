@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    [SerializeField] float CameraMoveSpeed = 5f;
     [SerializeField] float timeBetweenPanels;
 
     bool transitioning = false;
@@ -41,6 +40,7 @@ public class CameraMovement : MonoBehaviour
         }
         this.transform.position = target;
         transitioning = false;
+        timer = 0f;
 
         FinishedMoving.Invoke();
     }
