@@ -18,6 +18,11 @@ public class Fade : MonoBehaviour
         StartCoroutine(FadeIn());
     }
 
+    private void OnDisable()
+    {
+        StartCoroutine(FadeOut());
+    }
+
     IEnumerator FadeIn()
     {
         Color col = sr.color;
@@ -26,6 +31,18 @@ public class Fade : MonoBehaviour
         {
             sr.color = col;
             col.a += Time.deltaTime * FadeSpeed;
+            yield return null;
+        }
+    }
+
+    IEnumerator FadeOut()
+    {
+        Color col = sr.color;
+        col.a = 1f;
+        while (col.a > 0f)
+        {
+            sr.color = col;
+            col.a -= Time.deltaTime * FadeSpeed;
             yield return null;
         }
     }
