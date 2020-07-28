@@ -10,7 +10,7 @@ public class MakeStuffAppear : MonoBehaviour
     private void Update()
     {
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.anyKeyDown)
         {
             // If all objects are present
             if (i == (stuff.Length))
