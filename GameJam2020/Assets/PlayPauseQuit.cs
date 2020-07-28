@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class ChangeUI : MonoBehaviour
+public enum UItype { play, resume, quit }
+public class PlayPauseQuit : MonoBehaviour
 {
+    [SerializeField] private UItype type;
+    [SerializeField] private string scenename;
+
     private SpriteRenderer sprite;
-    [SerializeField] private GameObject[] hideThis;
-    [SerializeField] private GameObject[] unhideThis;
 
     private void Awake()
     {
@@ -16,21 +19,22 @@ public class ChangeUI : MonoBehaviour
     void OnMouseOver()
     {
         sprite.color = new Color(1, 1, 1, 0.5f);
-
         if (Input.GetMouseButtonDown(0))
         {
-            foreach (GameObject ui in unhideThis)
+            if (type == UItype.play)
             {
-                ui.SetActive(true);
-                ui.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
+                SceneManager.LoadScene(scenename);
             }
-            foreach (GameObject ui in hideThis)
+            if (type == UItype.quit)
             {
-                ui.SetActive(false);
+                Application.Quit();
+            }
+            if (type == UItype.resume)
+            {
+                //wip
             }
         }
     }
-
     private void OnMouseExit()
     {
         sprite.color = new Color(1, 1, 1, 1);
