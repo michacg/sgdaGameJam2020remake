@@ -15,7 +15,7 @@ public class MakeStuffAppear : MonoBehaviour
             // If all objects are present
             if (i == (stuff.Length))
             {
-                print("Next Scene!");
+                ChapterManager.instance.NextPanel();
             }
             else
             {
