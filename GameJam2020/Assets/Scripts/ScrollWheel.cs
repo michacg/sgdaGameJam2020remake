@@ -19,8 +19,11 @@ public class ScrollWheel : MonoBehaviour
     private float wheelLen;
     private float listLen;
 
+    bool OnPanel = false;
+
     private void Awake()
     {
+        GetComponentInParent<Panel>().OnPanel += Activate;
         sprite = GetComponent<SpriteRenderer>();
     }
 
@@ -94,5 +97,10 @@ public class ScrollWheel : MonoBehaviour
         }
         
         
+    }
+
+    void Activate()
+    {
+        OnPanel = true;
     }
 }

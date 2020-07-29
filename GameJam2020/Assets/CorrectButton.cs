@@ -12,7 +12,7 @@ public class CorrectButton : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            print("next scene");
+            ChapterManager.instance.NextPanel();
         }
     }
 
@@ -20,4 +20,6 @@ public class CorrectButton : MonoBehaviour
     {
         emote.SetActive(false);
     }
+
+
 }
