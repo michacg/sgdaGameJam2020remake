@@ -27,7 +27,6 @@ public class MessageBing : MonoBehaviour
         if (OnPanel && !pinged)
         {
             StartCoroutine(WaitThenPing());
-            //SFX for Ping!
             pinged = true;
         }
     }
