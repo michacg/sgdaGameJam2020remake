@@ -17,11 +17,13 @@ public class HoldClick : MonoBehaviour
 
     protected void OnMouseDown()
     {
+        FindObjectOfType<audioManager>().Play("cupNoodleLid");
         Pressed = true;
     }
 
     protected virtual void OnMouseUp()
     {
+        FindObjectOfType<audioManager>().Pause("cupNoodleLid");
         Pressed = false;
     }
 

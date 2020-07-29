@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:GameJam2020/Assets/Chapter3.meta
 guid: ad62a98b82df5da47b07778d2321a196
+=======
+guid: e842a01ec30a2754287040fa7134abaa
+>>>>>>> b17fca3b9c291ccc92aba90dea66d8138bc0db13:GameJam2020/Assets/Chapter3.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

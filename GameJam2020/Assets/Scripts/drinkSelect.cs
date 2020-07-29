@@ -19,7 +19,9 @@ public class drinkSelect : MonoBehaviour
             {
                 sprite.color = new Color(1, 1, 1, 0.5f);
                 Debug.Log("Hello: " + this.gameObject.name);
+                FindObjectOfType<audioManager>().Play("vendingMachine");
                 ChapterManager.instance.NextPanel();
+
 
             }
             else
