@@ -5,6 +5,7 @@ using UnityEngine;
 public class CorrectButton : MonoBehaviour
 {
     [SerializeField] private GameObject emote;
+    private bool OnPanel = false;
 
     private void OnMouseOver()
     {
@@ -13,6 +14,7 @@ public class CorrectButton : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             ChapterManager.instance.NextPanel();
+            //   OnPanel = false;
         }
     }
 

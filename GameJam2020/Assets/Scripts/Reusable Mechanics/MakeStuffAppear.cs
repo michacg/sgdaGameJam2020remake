@@ -9,7 +9,7 @@ public class MakeStuffAppear : MonoBehaviour
 
     bool OnPanel = false;
 
-    private void Awake()
+    private void Start()
     {
         GetComponentInParent<Panel>().OnPanel += Activate;
     }
