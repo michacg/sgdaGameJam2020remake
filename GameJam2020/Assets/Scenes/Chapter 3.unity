@@ -532,7 +532,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100072187}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.278, z: 1}
+  m_LocalPosition: {x: 0, y: 2.2779999, z: 1}
   m_LocalScale: {x: 2.1301334, y: 2.487796, z: 1}
   m_Children:
   - {fileID: 1301990470}
@@ -543,7 +543,7 @@ Transform:
   - {fileID: 2022276866}
   - {fileID: 2137148409}
   m_Father: {fileID: 869572335}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &129247245
 GameObject:
@@ -796,11 +796,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 204060991}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.358, z: -1}
+  m_LocalPosition: {x: 0, y: 2.44, z: -1}
   m_LocalScale: {x: 1.367654, y: 1.5972921, z: 1}
   m_Children: []
   m_Father: {fileID: 869572335}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &204060993
 BoxCollider2D:
@@ -841,8 +841,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollingList: {fileID: 100072187}
-  wheelEndY: -1.341
-  listEndY: 1.62864
+  wheelEndY: -16.32
+  listEndY: -11.13
 --- !u!212 &204060995
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2003,8 +2003,8 @@ Transform:
   m_LocalPosition: {x: 22.8, y: -16.2, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 204060992}
   - {fileID: 100072188}
+  - {fileID: 204060992}
   - {fileID: 88356932}
   - {fileID: 217357102}
   - {fileID: 776705788}
