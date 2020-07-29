@@ -12,17 +12,24 @@ public class MessageBing : MonoBehaviour
     [SerializeField] private float chatY;
 
     private SpriteRenderer m_sprite;
+    private bool pinged = false;
+    bool OnPanel = false;
 
-    void Start()
+    private void Awake()
     {
+        GetComponentInParent<Panel>().OnPanel += Activate;
         m_sprite = GetComponent<SpriteRenderer>();
-        StartCoroutine(WaitThenPing());
     }
 
 
     void Update()
     {
-        
+        if (OnPanel && !pinged)
+        {
+            StartCoroutine(WaitThenPing());
+            //SFX for Ping!
+            pinged = true;
+        }
     }
 
     private IEnumerator WaitThenPing()
@@ -68,6 +75,11 @@ public class MessageBing : MonoBehaviour
             chat.transform.position = Vector3.Lerp(currentPos, targetPos, 0.1f);
             yield return new WaitForSeconds(waitTime);
         }
+    }
+
+    void Activate()
+    {
+        OnPanel = true;
     }
 
 }
