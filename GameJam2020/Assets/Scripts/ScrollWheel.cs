@@ -38,13 +38,16 @@ public class ScrollWheel : MonoBehaviour
 
     private void Update()
     {
-        if (Input.anyKey)
+        if (OnPanel)
         {
-            OnMouseOver();
-        }
-        else
-        {
-            OnMouseExit();
+            if (Input.anyKey)
+            {
+                OnMouseOver();
+            }
+            else
+            {
+                OnMouseExit();
+            }
         }
     }
     void OnMouseOver()
@@ -103,4 +106,5 @@ public class ScrollWheel : MonoBehaviour
     {
         OnPanel = true;
     }
+
 }

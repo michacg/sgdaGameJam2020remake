@@ -1257,6 +1257,7 @@ MonoBehaviour:
   - {fileID: 392502804}
   - {fileID: 869572334}
   - {fileID: 1688168735}
+  SceneToLoad: 
 --- !u!4 &356275947
 Transform:
   m_ObjectHideFlags: 0
