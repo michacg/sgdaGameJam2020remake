@@ -9,7 +9,7 @@ public class HoldClick : MonoBehaviour
     protected bool Pressed = false;
     protected bool OnPanel = false;
     // Start is called before the first frame update
-    void Awake()
+    protected virtual void Awake()
     {
         GetComponentInParent<Panel>().OnPanel += Activate;
         HideAllEndObjects();
@@ -49,9 +49,9 @@ public class HoldClick : MonoBehaviour
         }
     }
 
-    public void Activate()
+    public virtual void Activate()
     {
-        Debug.Log("Activating");
+        Debug.Log("Hello!");
         OnPanel = true;
     }
 }

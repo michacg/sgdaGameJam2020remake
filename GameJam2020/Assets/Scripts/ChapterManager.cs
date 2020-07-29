@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChapterManager : MonoBehaviour
 {
     public static ChapterManager instance = null;
 
     [SerializeField] GameObject[] Panels;
+    [SerializeField] string SceneToLoad;
 
     CameraMovement cam;
 
@@ -27,12 +29,15 @@ public class ChapterManager : MonoBehaviour
 
     public void NextPanel()
     {
-        Debug.Log(index);
-        cam.MoveCameraToNextPanel(Panels[++index].transform.position);
+        if (index + 1 < Panels.Length)
+            cam.MoveCameraToNextPanel(Panels[++index].transform.position);
+        else
+            SceneManager.LoadScene(SceneManager.GetSceneByName(SceneToLoad).buildIndex);
     }
 
     void ActivateNextPanel()
     {
+        Debug.Log("Hey");
         Panels[index].GetComponent<Panel>().Activate();  
     }
 

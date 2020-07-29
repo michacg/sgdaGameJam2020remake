@@ -16,9 +16,9 @@ public class HoldClickDist : HoldClick
     float yDir = 1;
 
     // Start is called before the first frame update
-    void Awake()
+    protected override void Awake()
     {
-        HideAllEndObjects();
+        base.Awake();
         OrigX = MovingObject.transform.position.x;
         OrigY = MovingObject.transform.position.y;
     }
