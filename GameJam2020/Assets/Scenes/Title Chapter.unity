@@ -729,7 +729,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 43b8e13d59c271240a6c51b9ac9f9250, type: 2}
+  - {fileID: 2100000, guid: b3d53b0c0c0249d4bb0bcbaaab9cefd8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -794,6 +794,7 @@ MonoBehaviour:
   - {fileID: 2124381141}
   - {fileID: 1165344743}
   - {fileID: 1920103997}
+  SceneToLoad: 
 --- !u!4 &379844039
 Transform:
   m_ObjectHideFlags: 0
@@ -1581,7 +1582,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &809420327
 GameObject:
@@ -1744,7 +1745,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b3d53b0c0c0249d4bb0bcbaaab9cefd8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2041,7 +2042,6 @@ GameObject:
   - component: {fileID: 872894073}
   - component: {fileID: 872894072}
   - component: {fileID: 872894074}
-  - component: {fileID: 872894076}
   - component: {fileID: 872894075}
   m_Layer: 0
   m_Name: play
@@ -2155,21 +2155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  scenename: DannyTest
---- !u!114 &872894076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 872894071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99bfc2bbc3a60bb4d86e8c49794127c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  scenename: 
+  scenename: Chapter1
 --- !u!1 &883934532
 GameObject:
   m_ObjectHideFlags: 0
@@ -3537,7 +3523,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b3d53b0c0c0249d4bb0bcbaaab9cefd8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3825,7 +3811,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b3d53b0c0c0249d4bb0bcbaaab9cefd8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
