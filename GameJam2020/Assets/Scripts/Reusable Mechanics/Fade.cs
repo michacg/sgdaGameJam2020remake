@@ -15,11 +15,13 @@ public class Fade : MonoBehaviour
 
     private void OnEnable()
     {
+     
         StartCoroutine(FadeIn());
     }
 
     private void OnDisable()
     {
+        
         StartCoroutine(FadeOut());
     }
 

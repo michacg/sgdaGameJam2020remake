@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class audioManager : MonoBehaviour
 {
-
+    public static audioManager instance = null;
     public Sound[] sounds;
     // Start is called before the first frame update
     void Awake()
     {
+        instance = this;
         foreach (Sound s in sounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();
@@ -18,7 +19,7 @@ public class audioManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void Play(string name)
+    public void Play(string name, bool loop = false)
     {
         Sound s = Array.Find(sounds, sound => sound.audioName == name);
         if (s == null)
@@ -26,6 +27,8 @@ public class audioManager : MonoBehaviour
             Debug.Log("sound not found");
             return;
         }
+        s.source.loop = loop;
+ 
         s.source.Play();
     }
 
@@ -37,6 +40,16 @@ public class audioManager : MonoBehaviour
             Debug.Log("sound not found");
             return;
         }
-        s.source.Stop();
+        s.source.Pause();
+    }
+    public void Unpause(string name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.audioName == name);
+        if (s == null)
+        {
+            Debug.Log("sound not found");
+            return;
+        }
+        s.source.UnPause();
     }
 }

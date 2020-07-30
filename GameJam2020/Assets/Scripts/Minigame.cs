@@ -30,22 +30,26 @@ public class Minigame : HoldClick
 
     public void GameOver()
     {
+        
         StartCoroutine(HideGame());
     }
 
     IEnumerator HideGame()
     {
+        audioManager.instance.Play("timesUp");
         foreach (GameObject g in FadeIn)
         {
             g.SetActive(true);
         }
         yield return new WaitForSeconds(1.5f);
+        
         mg.SetActive(false);
         foreach (GameObject g in ObjectsToDeactivate)
         {
             g.SetActive(false);
         }
         ShowAllEndObjects();
+       
     }
 
 }

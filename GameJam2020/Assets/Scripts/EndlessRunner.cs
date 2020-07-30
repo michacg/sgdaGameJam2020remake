@@ -18,6 +18,7 @@ public class EndlessRunner : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.Space))
             {
+                FindObjectOfType<audioManager>().Play("jumping");
                 isPlaying = true;
                 StartGame();
             }
@@ -50,6 +51,7 @@ public class EndlessRunner : MonoBehaviour
         {
             ob.GetComponent<RunnerObstacle>().Playing(true);
         }
+        
     }
 
     void IncreaseSpeed()

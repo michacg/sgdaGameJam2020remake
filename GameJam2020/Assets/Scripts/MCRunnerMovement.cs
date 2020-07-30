@@ -51,6 +51,7 @@ public class MCRunnerMovement : MonoBehaviour
             }
 
             HoldingSpace = true;
+            audioManager.instance.Play("jumping");
         }
         else
         {
