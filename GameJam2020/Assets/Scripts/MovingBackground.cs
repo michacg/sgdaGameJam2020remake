@@ -9,16 +9,18 @@ public class MovingBackground : HoldClick
     [SerializeField] float LeftBound;
     [SerializeField] float DistanceToLoop;
     [SerializeField] float ShiftSpeed;
+    private bool sound = false;
 
 
     float timer = 0f;
-
 
     // Update is called once per frame
     void Update()
     {
         if(OnPanel)
         {
+            PlaySound();
+            audioManager.instance.Pause("timesUp");
             LoopBackground();
             timer += Time.deltaTime;
 
@@ -31,7 +33,8 @@ public class MovingBackground : HoldClick
 
     void LoopBackground()
     {
-        foreach(GameObject g in BackgroundObjects)
+        
+        foreach (GameObject g in BackgroundObjects)
         {
             if (g.transform.localPosition.x < LeftBound)
             {
@@ -40,6 +43,16 @@ public class MovingBackground : HoldClick
             g.transform.Translate(Vector2.left * ShiftSpeed * Time.deltaTime);
 
         }
+    }
+    
+    void PlaySound()
+    {
+        if(!sound)
+        {
+            sound = true;
+            audioManager.instance.Play("carAmbient");
+        }
+      
     }
 
 }

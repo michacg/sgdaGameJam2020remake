@@ -6,7 +6,7 @@ public class ClickToProgress : MonoBehaviour
 {
     void OnMouseDown()
     {
-        FindObjectOfType<audioManager>().Play("onClick");
+       audioManager.instance.Play("onClick");
         Debug.Log("here");
         ChapterManager.instance.NextPanel();
     }
