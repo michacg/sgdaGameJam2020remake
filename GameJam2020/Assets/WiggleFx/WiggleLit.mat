@@ -29,7 +29,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_E522D8AC: 0.08
+    - Vector1_E522D8AC: 0.05
     - Vector1_FE6E336A: 0.12
     m_Colors: []
   m_BuildTextureStacks: []
