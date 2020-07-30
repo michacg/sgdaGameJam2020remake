@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public enum UItype { play, resume, quit }
+public enum UItype { play, resume, quit}
 public class PlayPauseQuit : MonoBehaviour
 {
+    [SerializeField] private FadeManager fadeManger;
     [SerializeField] private UItype type;
     [SerializeField] private string scenename;
 
@@ -23,7 +24,9 @@ public class PlayPauseQuit : MonoBehaviour
         {
             if (type == UItype.play)
             {
-                SceneManager.LoadScene(scenename);
+                fadeManger.gameObject.SetActive(true);
+                fadeManger.FadeSceneOut(scenename);
+                //SceneManager.LoadScene(scenename);
             }
             if (type == UItype.quit)
             {
@@ -38,5 +41,8 @@ public class PlayPauseQuit : MonoBehaviour
     private void OnMouseExit()
     {
         sprite.color = new Color(1, 1, 1, 1);
+    }
+    public string GetSceneName(){
+        return scenename;
     }
 }
