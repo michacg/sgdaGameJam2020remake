@@ -9,10 +9,12 @@ public class CorrectButton : MonoBehaviour
 
     private void OnMouseOver()
     {
-        emote.SetActive(true);
+        if(emote)
+            emote.SetActive(true);
 
         if (Input.GetMouseButtonDown(0))
         {
+            Debug.Log("button true");
             ChapterManager.instance.NextPanel();
             OnPanel = false;
         }
@@ -20,7 +22,8 @@ public class CorrectButton : MonoBehaviour
 
     private void OnMouseExit()
     {
-        emote.SetActive(false);
+        if(emote)
+            emote.SetActive(false);
     }
 
 
