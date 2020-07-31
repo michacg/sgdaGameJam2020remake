@@ -795,6 +795,7 @@ MonoBehaviour:
   - {fileID: 1165344743}
   - {fileID: 1920103997}
   SceneToLoad: 
+  fadeManager: {fileID: 8939566717474868866}
 --- !u!4 &379844039
 Transform:
   m_ObjectHideFlags: 0
@@ -924,6 +925,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   scenename: Chapter4
+  fadeManager: {fileID: 8939566717474868866}
 --- !u!212 &410597399
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -988,7 +990,7 @@ Transform:
   m_LocalScale: {x: 1.4493562, y: 1.4610634, z: 1.638}
   m_Children: []
   m_Father: {fileID: 1299704584}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &410597401
 BoxCollider2D:
@@ -2287,6 +2289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   scenename: Chapter1
+  fadeManager: {fileID: 0}
 --- !u!1 &883934532
 GameObject:
   m_ObjectHideFlags: 0
@@ -2647,6 +2650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   scenename: Chapter5
+  fadeManager: {fileID: 8939566717474868866}
 --- !u!212 &956810398
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2711,7 +2715,7 @@ Transform:
   m_LocalScale: {x: 1.4493562, y: 1.4610634, z: 1.638}
   m_Children: []
   m_Father: {fileID: 1299704584}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &956810400
 BoxCollider2D:
@@ -2936,6 +2940,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   scenename: Chapter1
+  fadeManager: {fileID: 8939566717474868866}
 --- !u!212 &1084343896
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3181,9 +3186,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1696328309}
   - {fileID: 956810399}
   - {fileID: 410597400}
-  - {fileID: 1696328309}
   - {fileID: 2118839532}
   - {fileID: 1084343897}
   - {fileID: 2147084778}
@@ -4405,6 +4410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 2
   scenename: 
+  fadeManager: {fileID: 0}
 --- !u!1 &1663416307
 GameObject:
   m_ObjectHideFlags: 0
@@ -4730,6 +4736,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   scenename: Chapter3
+  fadeManager: {fileID: 8939566717474868866}
 --- !u!212 &1696328308
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4794,7 +4801,7 @@ Transform:
   m_LocalScale: {x: 1.4493562, y: 1.4610634, z: 1.638}
   m_Children: []
   m_Father: {fileID: 1299704584}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1696328310
 BoxCollider2D:
@@ -5176,6 +5183,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: db8831c6eec7c9247b2d68db5b95c492, type: 3}
   - {fileID: 21300000, guid: 19ccde403c5d5104a89b97195738b628, type: 3}
   - {fileID: 21300000, guid: deacec099446ceb4089b0cd10ce8d9d9, type: 3}
+  TimesToRepeat: 1
 --- !u!1 &1990389539
 GameObject:
   m_ObjectHideFlags: 0
@@ -5675,6 +5683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   scenename: Chapter2
+  fadeManager: {fileID: 8939566717474868866}
 --- !u!212 &2118839531
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6067,3 +6076,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7d1634e7af620a4bb0299dc93a68ae9, type: 3}
+--- !u!114 &8939566717474868866 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 89928577, guid: d7d1634e7af620a4bb0299dc93a68ae9,
+    type: 3}
+  m_PrefabInstance: {fileID: 8939566717474868865}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36631a202e871cc40805e1e32de8e9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

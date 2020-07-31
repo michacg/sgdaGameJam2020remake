@@ -5,15 +5,18 @@ using UnityEngine.SceneManagement;
 //manage fading in/out of scenes
 public class FadeManager : MonoBehaviour
 {
+    public FadeManager instance = null;
     private Animator animator;
-    [SerializeField] private AnimationClip FadeIn;
-    
-    private void Awake()
-    {
-        animator = GetComponent<Animator>();
+    [SerializeField] private  AnimationClip FadeIn;
+
+    void Awake(){
+         animator = GetComponent<Animator>();
+        if(instance != null)
+        {
+            Destroy(instance.gameObject);
+        }
+        instance = this;
     }
-
-
     // Start is called before the first frame update
     void Start()
     {
