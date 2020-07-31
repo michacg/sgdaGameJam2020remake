@@ -7,11 +7,14 @@ public class HoldClickTime : HoldClick
     [SerializeField] GameObject ChangingObject;
     [SerializeField] float SpriteChangeTimer;
     [SerializeField] List<Sprite> Sprites;
+    [SerializeField] int TimesToRepeat = 1;
 
     SpriteRenderer SpriteRend;
 
     float totalTime;
     float timer;
+
+    int TimesLooped = 1;
 
     void Start()
     {
@@ -31,15 +34,25 @@ public class HoldClickTime : HoldClick
                 {
                     SpriteRend.sprite = Sprites[(int)(timer / SpriteChangeTimer)];
 
-                    if ((int)(timer / SpriteChangeTimer) == Sprites.Count - 1)
+                    if ((int)(timer / SpriteChangeTimer) == Sprites.Count - 1 && TimesLooped == TimesToRepeat)
                     {
                         ShowAllEndObjects();
                     }
                 }
                 else
                 {
-                    OnPanel = false;
-                    ChapterManager.instance.NextPanel();
+                    if (TimesLooped == TimesToRepeat)
+                    {
+                        OnPanel = false;
+                        MultiPanel p = GetComponentInParent<MultiPanel>();
+                        if (p == null || !p.NextPart())
+                            ChapterManager.instance.NextPanel();
+                    }
+                    else
+                    {
+                        timer = 0f;
+                        TimesLooped += 1;
+                    }
                 }
             }
             timer += Time.deltaTime;

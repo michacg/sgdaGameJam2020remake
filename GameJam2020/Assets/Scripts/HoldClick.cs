@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HoldClick : MonoBehaviour
+public class HoldClick : MonoBehaviour, Interactable
 {
     public List<GameObject> EndOfInteractionObjects;
 

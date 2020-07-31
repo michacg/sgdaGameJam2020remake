@@ -8,7 +8,7 @@ public class Panel: MonoBehaviour
     public Focused OnPanel;
 
 
-    public void Activate()
+    public virtual void Activate()
     {
         if(OnPanel != null)
         {
