@@ -41,7 +41,7 @@ public class ChapterManager : MonoBehaviour
     {
         if (index + 1 < Panels.Length){
             cam.MoveCameraToNextPanel(Panels[++index].transform.position);
-            Debug.Log("loading: " + (index+1));
+            Debug.Log("loading panel: " + (index+1));
         }
         else{
             Debug.Log("fading");
