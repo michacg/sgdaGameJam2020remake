@@ -3394,7 +3394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eb66018e82bfbe4aa3f31b00a47cf05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeBGM: 0
+  changeBGM: 1
 --- !u!1 &650649204
 GameObject:
   m_ObjectHideFlags: 0
@@ -11108,7 +11108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eb66018e82bfbe4aa3f31b00a47cf05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeBGM: 0
+  changeBGM: 1
 --- !u!1 &1928364388
 GameObject:
   m_ObjectHideFlags: 0
@@ -11454,6 +11454,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   songs:
   - {fileID: 8300000, guid: f65546e508d8060458d4a5e51976123e, type: 3}
+  - {fileID: 8300000, guid: 919b22774cc66fc45b33f214b112d83f, type: 3}
+  - {fileID: 8300000, guid: 49e9b571c08e95c43b9f7e57e700509f, type: 3}
   m_audio: {fileID: 0}
 --- !u!4 &1973077239
 Transform:
