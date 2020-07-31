@@ -29,7 +29,7 @@ public class FadeManager : MonoBehaviour
         animator.Play("FadeIN");
     }
     public void LoadScene(string scenename){
-         //SceneManager.LoadScene(NextLevel.GetSceneName());
+         SceneManager.LoadScene(NextLevel.GetSceneName());
     }
     public void SetInactive(){
         this.gameObject.SetActive(false);

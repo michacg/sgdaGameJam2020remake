@@ -47,6 +47,7 @@ public class CameraMovement : MonoBehaviour
 
     public void StartChapter()
     {
+        Debug.Log("Starting the chapter");
         FinishedMoving.Invoke();
     }
 

@@ -39,4 +39,9 @@ public class PlayPauseQuit : MonoBehaviour
     {
         sprite.color = new Color(1, 1, 1, 1);
     }
+
+    public string GetSceneName()
+    {
+        return scenename;
+    }
 }

@@ -17,6 +17,10 @@ public class ChapterManager : MonoBehaviour
 
     void Awake()
     {   
+        if(instance != null)
+        {
+            Destroy(instance.gameObject);
+        }
         instance = this;
         CameraMovement.FinishedMoving += ActivateNextPanel;
     }
@@ -27,17 +31,22 @@ public class ChapterManager : MonoBehaviour
         cam.InitialFrame(Panels[index].transform.position);
     }
 
+    void OnDestroy()
+    {
+        CameraMovement.FinishedMoving -= ActivateNextPanel;
+    }
+
     public void NextPanel()
     {
         if (index + 1 < Panels.Length)
             cam.MoveCameraToNextPanel(Panels[++index].transform.position);
-        else
-            SceneManager.LoadScene(SceneManager.GetSceneByName(SceneToLoad).buildIndex);
+        //else
+            //SceneManager.LoadScene(SceneManager.GetSceneByName(SceneToLoad).buildIndex);
     }
 
     void ActivateNextPanel()
     {
-        Debug.Log("Hey");
+        Debug.Log("Index: " + index);
         Panels[index].GetComponent<Panel>().Activate();  
     }
 

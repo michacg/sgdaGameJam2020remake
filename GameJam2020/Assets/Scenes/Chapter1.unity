@@ -2555,7 +2555,7 @@ MonoBehaviour:
   - {fileID: 673567109}
   - {fileID: 1154550003}
   - {fileID: 187778257}
-  SceneToLoad: Chapter3
+  SceneToLoad: 
 --- !u!4 &1313228545
 Transform:
   m_ObjectHideFlags: 0
@@ -3421,7 +3421,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99bfc2bbc3a60bb4d86e8c49794127c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeManger: {fileID: 89928577}
   type: 0
   scenename: Chapter2
 --- !u!1 &1775716810
