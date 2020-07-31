@@ -46,20 +46,25 @@ public class LevelUp : MonoBehaviour
 
     private void OnMouseDown()
     {
-        m_sprite.sprite = buttonDown;
-        clicks++;
 
-
-        // multiples of 5
-        if (clicks % 5 == 0)
+        if (OnPanel)
         {
-            ageObj.GetComponent<SpriteRenderer>().sprite = numSprites[++age];
+            m_sprite.sprite = buttonDown;
+            clicks++;
+
+
+            // multiples of 5
+            if (clicks % 5 == 0)
+            {
+                ageObj.GetComponent<SpriteRenderer>().sprite = numSprites[++age];
+            }
         }
     }
 
     private void OnMouseUp()
     {
-        m_sprite.sprite = buttonUp;
+        if (OnPanel)
+            m_sprite.sprite = buttonUp;
     }
 
     void Activate()
