@@ -21,20 +21,20 @@ public class phone : MonoBehaviour
     }
 
         void Update()
-    {
-        if (heart0.GetComponent<SpriteRenderer>().color == new Color(1,1,1f))
         {
-            Vector3 newPos = transform.position;
-            newPos.y = yPos;
-            transform.position = Vector2.Lerp(transform.position, newPos, 0.1f);
+            if (heart0.GetComponent<SpriteRenderer>().color == new Color(1,1,1f))
+            {
+                Vector3 newPos = transform.position;
+                newPos.y = yPos;
+                transform.position = Vector2.Lerp(transform.position, newPos, 0.1f);
+            }
+            if (heart1.GetComponent<SpriteRenderer>().color == new Color(1, 1, 1f))
+            {
+                //DONE
+                ChapterManager.instance.NextPanel();
+                OnPanel = false;
+            }
         }
-        if (heart1.GetComponent<SpriteRenderer>().color == new Color(1, 1, 1f))
-        {
-            //DONE
-            ChapterManager.instance.NextPanel();
-            OnPanel = false;
-        }
-    }
 
     private void OnMouseOver()
     {

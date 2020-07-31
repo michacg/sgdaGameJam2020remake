@@ -29,8 +29,8 @@ public class LevelUp : MonoBehaviour
 
     void Update()
     {
-        print(age);
-        if (age == numSprites.Length)
+        print("age" + age);
+        if (age == (numSprites.Length -1 ))
         {
             ChapterManager.instance.NextPanel();
             OnPanel = false;
@@ -54,7 +54,7 @@ public class LevelUp : MonoBehaviour
 
 
             // multiples of 5
-            if (clicks % 5 == 0)
+            if (clicks % 5 == 0 && age != numSprites.Length)
             {
                 ageObj.GetComponent<SpriteRenderer>().sprite = numSprites[++age];
             }
