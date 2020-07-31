@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClickToMakeNoise : MonoBehaviour
+public class ClickForKeebs : MonoBehaviour
 {
 
     private void OnMouseDown()
     {
         // Play SFX
-        audioManager.instance.Play("harp");
+        Debug.Log("hiya");
+        audioManager.instance.Play("keyPress");
     }
 
 }
+

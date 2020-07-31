@@ -7,6 +7,7 @@ public class SaiyaCall : MonoBehaviour
     private void OnMouseDown()
     {
         // saiya pick up SFX (?)
+        audioManager.instance.Play("joinedCall");
         EventController.instance.saiyaClicked = true;
     }
 }

@@ -27,6 +27,11 @@ public class MakeStuffAppear : MonoBehaviour
             }
             else
             {
+                if (this.GetComponent<AudioSource>() != null)
+                {
+                    this.GetComponent<AudioSource>().Play();
+                }
+               
                 stuff[i].SetActive(true);
                 i++;
             }

@@ -31,6 +31,7 @@ public class Hit : MonoBehaviour
             }
             else
             {
+                audioManager.instance.Play("dps");
                 hpBar.transform.localScale = newScale;
             }
         }

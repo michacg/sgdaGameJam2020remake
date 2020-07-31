@@ -21,6 +21,7 @@ public class ClickToControl : MonoBehaviour
     {
         if (Input.GetMouseButton(0) && OnPanel)
         {
+           
             mousePosition=Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed);
         }
@@ -36,6 +37,7 @@ public class ClickToControl : MonoBehaviour
 
         onTrack.SetActive(true);
         offTrack.SetActive(false);
+        audioManager.instance.Play("slash");
     }
 
     private void OnTriggerExit2D(Collider2D collision)

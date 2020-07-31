@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClickToMakeNoise : MonoBehaviour
+public class ClickToDmg : MonoBehaviour
 {
 
     private void OnMouseDown()
     {
         // Play SFX
-        audioManager.instance.Play("harp");
+        audioManager.instance.Play("dmg");
     }
 
 }

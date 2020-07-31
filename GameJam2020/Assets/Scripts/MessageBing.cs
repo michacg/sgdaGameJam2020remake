@@ -36,6 +36,7 @@ public class MessageBing : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
 
         //sound sfx
+        audioManager.instance.Play("msgNotif");
         m_sprite.sprite = newMSG;
     }
 

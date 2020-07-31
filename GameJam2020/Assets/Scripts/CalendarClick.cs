@@ -9,6 +9,7 @@ public class CalendarClick : MonoBehaviour
     private void OnMouseDown()
     {
         EventController.instance.calendarClicked = true;
+        audioManager.instance.Play("pageFlip");
         nextMonth.SetActive(true);
         //gameObject.SetActive(false);
     }

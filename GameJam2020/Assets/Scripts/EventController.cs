@@ -31,6 +31,7 @@ public class EventController : MonoBehaviour
             if (photosTaped >= photos.Length && calendarClicked)
             {
                 // DISCORD SFX
+                audioManager.instance.Play("joinedCall");
                 discord.SetActive(true);
             }
 

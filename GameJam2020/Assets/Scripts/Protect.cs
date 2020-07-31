@@ -30,6 +30,7 @@ public class Protect : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // Protected SFX!
+        audioManager.instance.Play("block");
         wingPivot.transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotZ));
 
         ChapterManager.instance.NextPanel();
