@@ -13,6 +13,9 @@ public class CameraMovement : MonoBehaviour
 
     float timer = 0;
 
+    void Awake(){
+        
+    }
 
     public void InitialFrame(Vector3 pos)
     {

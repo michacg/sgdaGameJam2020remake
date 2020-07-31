@@ -8,6 +8,7 @@ public class PlayPauseQuit : MonoBehaviour
 {
     [SerializeField] private UItype type;
     [SerializeField] private string scenename;
+    [SerializeField] private FadeManager fadeManager;
 
     private SpriteRenderer sprite;
 
@@ -23,6 +24,9 @@ public class PlayPauseQuit : MonoBehaviour
         {
             if (type == UItype.play)
             {
+                // Debug.Log("fading to: " + scenename);
+                // fadeManager.gameObject.SetActive(true);
+                // fadeManager.FadeSceneOut(scenename);
                 SceneManager.LoadScene(scenename);
             }
             if (type == UItype.quit)

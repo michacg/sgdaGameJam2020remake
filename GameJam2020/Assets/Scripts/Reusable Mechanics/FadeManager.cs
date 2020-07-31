@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class FadeManager : MonoBehaviour
 {
     private Animator animator;
-    [SerializeField] private PlayPauseQuit NextLevel;
+    [SerializeField] private AnimationClip FadeIn;
     
     private void Awake()
     {
@@ -26,10 +26,17 @@ public class FadeManager : MonoBehaviour
         
     }
     public void FadeSceneOut(string scenename){
+        Debug.Log("fading to: " + scenename);
+        AnimationEvent evt = new AnimationEvent();
+        evt.stringParameter = scenename;
+        evt.time = 0.57f;
+        evt.functionName = "LoadScene";
+        FadeIn.AddEvent(evt);
+        
         animator.Play("FadeIN");
     }
     public void LoadScene(string scenename){
-         SceneManager.LoadScene(NextLevel.GetSceneName());
+        SceneManager.LoadScene(scenename);
     }
     public void SetInactive(){
         this.gameObject.SetActive(false);
