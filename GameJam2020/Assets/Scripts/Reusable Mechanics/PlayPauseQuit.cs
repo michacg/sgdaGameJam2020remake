@@ -24,10 +24,10 @@ public class PlayPauseQuit : MonoBehaviour
         {
             if (type == UItype.play)
             {
-                // Debug.Log("fading to: " + scenename);
-                // fadeManager.gameObject.SetActive(true);
-                // fadeManager.FadeSceneOut(scenename);
-                SceneManager.LoadScene(scenename);
+                //Debug.Log("fading to: " + scenename);
+                fadeManager.gameObject.SetActive(true);
+                fadeManager.FadeSceneOut(scenename);
+                //SceneManager.LoadScene(scenename);
             }
             if (type == UItype.quit)
             {

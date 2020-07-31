@@ -9,6 +9,7 @@ public class ChapterManager : MonoBehaviour
 
     [SerializeField] GameObject[] Panels;
     [SerializeField] string SceneToLoad;
+    [SerializeField] FadeManager fadeManager;
 
     CameraMovement cam;
 
@@ -40,8 +41,12 @@ public class ChapterManager : MonoBehaviour
     {
         if (index + 1 < Panels.Length)
             cam.MoveCameraToNextPanel(Panels[++index].transform.position);
-        //else
+        else{
+            fadeManager.FadeSceneOut(SceneToLoad);
+            
             //SceneManager.LoadScene(SceneManager.GetSceneByName(SceneToLoad).buildIndex);
+        }
+            
     }
 
     void ActivateNextPanel()
