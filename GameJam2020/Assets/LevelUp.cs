@@ -27,13 +27,15 @@ public class LevelUp : MonoBehaviour
         m_sprite.sprite = buttonUp;
     }
 
-    void Update()
-    {
+
+    private void UpdateAge(){
         print("age" + age);
-        if (age == (numSprites.Length -1 ))
+        if (age >= (numSprites.Length -1 ))
         {
+            Debug.Log("age done next panel");
             ChapterManager.instance.NextPanel();
             OnPanel = false;
+            return;
         }
 
         if (age + 7 == 13)
@@ -41,12 +43,11 @@ public class LevelUp : MonoBehaviour
 
         if (age + 7 == 18)
             pic.GetComponent<SpriteRenderer>().sprite = ageSprites[1];
-       
     }
 
     private void OnMouseDown()
     {
-
+        Debug.Log("mouse down");
         if (OnPanel)
         {
             m_sprite.sprite = buttonDown;
@@ -58,6 +59,7 @@ public class LevelUp : MonoBehaviour
             {
                 ageObj.GetComponent<SpriteRenderer>().sprite = numSprites[++age];
             }
+            UpdateAge();
         }
     }
 

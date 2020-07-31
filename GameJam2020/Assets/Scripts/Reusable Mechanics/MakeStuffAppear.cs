@@ -22,6 +22,7 @@ public class MakeStuffAppear : MonoBehaviour
             // If all objects are present
             if (i == (stuff.Length))
             {
+                Debug.Log("make stuff apear next chapter");
                 ChapterManager.instance.NextPanel();
                 OnPanel = false;
             }
