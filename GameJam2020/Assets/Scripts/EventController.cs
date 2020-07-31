@@ -28,7 +28,7 @@ public class EventController : MonoBehaviour
         if (OnPanel)
         {
             // Check if photos are taped
-            if (photosTaped == photos.Length && calendarClicked)
+            if (photosTaped >= photos.Length && calendarClicked)
             {
                 // DISCORD SFX
                 discord.SetActive(true);

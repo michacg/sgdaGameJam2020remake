@@ -32,7 +32,6 @@ public class PhotoController : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                print("tru");
                 taped = true;
                 EventController.instance.photosTaped += 1;
                 foreach (Transform child in transform)

@@ -14,7 +14,7 @@ public class CorrectButton : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             ChapterManager.instance.NextPanel();
-            //   OnPanel = false;
+            OnPanel = false;
         }
     }
 
