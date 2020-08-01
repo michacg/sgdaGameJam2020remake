@@ -28,6 +28,8 @@ public class Slideshow : MonoBehaviour, Interactable
     public void Activate()
     {
         OnPanel = true;
+        if (gameObject.GetComponent<AudioSource>() != null)
+            gameObject.GetComponent<AudioSource>().Play();
     }
 
     private void OnMouseDown()
@@ -50,6 +52,7 @@ public class Slideshow : MonoBehaviour, Interactable
 
         if (index < components.Length)
         {
+
             components[index].OnSlide();
             yield return new WaitForSeconds(TimeOnPicture);
         }
