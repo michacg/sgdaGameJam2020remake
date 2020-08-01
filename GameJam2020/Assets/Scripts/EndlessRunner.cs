@@ -16,7 +16,7 @@ public class EndlessRunner : MonoBehaviour
     {
         if(!isPlaying)
         {
-            if(Input.GetKeyDown(KeyCode.Space))
+            if(Input.GetKeyDown(KeyCode.Space) ||Input.GetKey(KeyCode.Mouse0))
             {
                 FindObjectOfType<audioManager>().Play("jumping");
                 isPlaying = true;

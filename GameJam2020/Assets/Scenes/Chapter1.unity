@@ -1530,6 +1530,7 @@ GameObject:
   - component: {fileID: 796328249}
   - component: {fileID: 796328248}
   - component: {fileID: 796328252}
+  - component: {fileID: 796328253}
   m_Layer: 0
   m_Name: Popup
   m_TagString: Untagged
@@ -1654,6 +1655,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FadeSpeed: 1
   FadeOnEnable: 1
+--- !u!114 &796328253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796328247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15a5487ac2dd6e24f99ce2e94e5f2bba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &825067451
 GameObject:
   m_ObjectHideFlags: 0

@@ -41,8 +41,9 @@ public class MCRunnerMovement : MonoBehaviour
 
     void CheckJump()
     {
-        if(Input.GetKey(KeyCode.Space))
+        if(Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.Mouse0))
         {
+            Debug.Log("player jump");
             if(!isJumping)
             {
                 TargetPos = new Vector3(this.transform.position.x, OrigY + TargetYInc, this.transform.position.z);
