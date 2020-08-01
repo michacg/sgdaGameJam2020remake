@@ -2878,7 +2878,7 @@ PrefabInstance:
     - target: {fileID: 8939566718028607217, guid: d7d1634e7af620a4bb0299dc93a68ae9,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7d1634e7af620a4bb0299dc93a68ae9, type: 3}
@@ -3074,7 +3074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EndOfInteractionObjects: []
   ChangingObject: {fileID: 1603000258}
-  SpriteChangeTimer: 0.5
+  SpriteChangeTimer: 0.2
   Sprites:
   - {fileID: 21300000, guid: 18454d4abc7a48946be5806f3c67c843, type: 3}
   - {fileID: 21300000, guid: 9044bec92b5e4f642857e8227578e85b, type: 3}

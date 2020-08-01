@@ -45,8 +45,11 @@ public class HoldClickTime : HoldClick
                     {
                         OnPanel = false;
                         MultiPanel p = GetComponentInParent<MultiPanel>();
-                        if (p == null || !p.NextPart())
+                        if (p == null || !p.NextPart()){
+                            Debug.Log("activating next panel from hold click times ");
                             ChapterManager.instance.NextPanel();
+                        }
+                            
                     }
                     else
                     {
