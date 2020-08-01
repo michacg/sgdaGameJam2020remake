@@ -7,6 +7,7 @@ public class CorrectButton : MonoBehaviour
     [SerializeField] private GameObject emote;
     private bool OnPanel = false;
 
+
     private void OnMouseOver()
     {
         if(emote)
@@ -15,8 +16,12 @@ public class CorrectButton : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("button true");
-            ChapterManager.instance.NextPanel();
-            OnPanel = false;
+            if(!OnPanel){
+                ChapterManager.instance.NextPanel();
+                OnPanel = false;
+            }
+            
+
         }
     }
 
