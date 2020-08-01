@@ -8,6 +8,7 @@ public class HoldClickTime : HoldClick
     [SerializeField] float SpriteChangeTimer;
     [SerializeField] List<Sprite> Sprites;
     [SerializeField] int TimesToRepeat = 1;
+    [SerializeField] GameObject HoldUXIndicator;
 
     SpriteRenderer SpriteRend;
 
@@ -28,6 +29,8 @@ public class HoldClickTime : HoldClick
     {
         if(Pressed && OnPanel)
         {
+            if(HoldUXIndicator)
+                HoldUXIndicator.SetActive(false);
             if(RoundToOneDP(timer) % SpriteChangeTimer == 0)
             {
                 if (timer < totalTime)
@@ -45,8 +48,11 @@ public class HoldClickTime : HoldClick
                     {
                         OnPanel = false;
                         MultiPanel p = GetComponentInParent<MultiPanel>();
-                        if (p == null || !p.NextPart())
+                        if (p == null || !p.NextPart()){
+                            Debug.Log("activating next panel from hold click times ");
                             ChapterManager.instance.NextPanel();
+                        }
+                            
                     }
                     else
                     {
@@ -75,6 +81,8 @@ public class HoldClickTime : HoldClick
     {
         base.OnMouseExit();
         NotInteracting();
+        if(HoldUXIndicator)
+            HoldUXIndicator.SetActive(false);
     }
 
     void NotInteracting()
@@ -82,5 +90,12 @@ public class HoldClickTime : HoldClick
         timer = 0f;
         SpriteRend.sprite = Sprites[0];
     }
+
+    private void OnMouseOver()
+    {
+        if(HoldUXIndicator && OnPanel)
+            HoldUXIndicator.SetActive(true);
+    }
+
 
 }

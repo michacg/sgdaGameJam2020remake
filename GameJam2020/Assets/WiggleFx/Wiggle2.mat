@@ -7,10 +7,10 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WiggleLit
+  m_Name: Wiggle2
   m_Shader: {fileID: -6465566751694194690, guid: a3224641d955cd642935daab8b368db4,
     type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -21,11 +21,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_D5968CAB:
-        m_Texture: {fileID: 2800000, guid: a76696fd00e38ca47bbb5d1f4800f1cb, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: b4cee0f6ef2e80449b8bd19283b80eb9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -33,12 +29,6 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - PixelSnap: 0
-    - Vector1_E522D8AC: 0.05
-    - Vector1_FE6E336A: 0.12
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+    - Vector1_E522D8AC: 0.08
+    m_Colors: []
   m_BuildTextureStacks: []

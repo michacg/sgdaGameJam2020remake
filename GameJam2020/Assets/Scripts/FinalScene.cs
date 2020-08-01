@@ -36,6 +36,5 @@ public class FinalScene : MonoBehaviour
             g.SetActive(true);
         }
         yield return new WaitForSeconds(1f);
-        Next.SetActive(true);
     }
 }

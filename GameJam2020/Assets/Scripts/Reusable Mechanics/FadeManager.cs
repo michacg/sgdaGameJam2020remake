@@ -15,7 +15,6 @@ public class FadeManager : MonoBehaviour
     void Start()
     {
        animator.Play("FadeOUT"); 
-        Debug.Log("fade manager events: " +  FadeIn.events.Length);
         if(FadeIn.events.Length > 0){
             Debug.Log(FadeIn.events[0].stringParameter);
         }
