@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MessageBing : MonoBehaviour
 {
+    public static MessageBing instance;
     [SerializeField] private Sprite newMSG;
     [SerializeField] private Sprite newMSGhover;
     [SerializeField] private float waitTime;
@@ -11,12 +12,17 @@ public class MessageBing : MonoBehaviour
     [SerializeField] private GameObject chat;
     [SerializeField] private float chatY;
 
+    [SerializeField] private GameObject lastObj;
+
     private SpriteRenderer m_sprite;
     private bool pinged = false;
     bool OnPanel = false;
 
     private void Awake()
     {
+        if (instance == null)
+            instance = this;
+
         GetComponentInParent<Panel>().OnPanel += Activate;
         m_sprite = GetComponent<SpriteRenderer>();
     }
@@ -28,6 +34,7 @@ public class MessageBing : MonoBehaviour
         {
             StartCoroutine(WaitThenPing());
             pinged = true;
+
         }
     }
 
@@ -75,6 +82,12 @@ public class MessageBing : MonoBehaviour
             chat.transform.position = Vector3.Lerp(currentPos, targetPos, 0.1f);
             yield return new WaitForSeconds(waitTime);
         }
+    }
+
+    public void NextPanel()
+    {
+        ChapterManager.instance.NextPanel();
+        OnPanel = false;
     }
 
     void Activate()
