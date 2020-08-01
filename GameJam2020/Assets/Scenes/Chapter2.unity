@@ -2583,7 +2583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b9109ee5677a1d4bb7d0fd2ac16692b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenPanels: 20
+  timeBetweenPanels: 0.5
 --- !u!81 &1577635397
 AudioListener:
   m_ObjectHideFlags: 0

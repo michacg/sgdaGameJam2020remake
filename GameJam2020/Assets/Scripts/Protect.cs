@@ -20,7 +20,7 @@ public class Protect : MonoBehaviour
         if (OnPanel && (Input.GetMouseButton(0) || Input.GetAxis("Horizontal") > 0)) //on panel
         {
             Vector3 newPos = transform.position;
-            newPos.x += moveInc * Time.deltaTime;
+            newPos.x += moveInc;
 
             if (wingPivot.transform.rotation != Quaternion.Euler(new Vector3(0, 0, rotZ)))
                 transform.position = newPos;

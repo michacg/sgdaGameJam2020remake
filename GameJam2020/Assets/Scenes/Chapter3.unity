@@ -1265,7 +1265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9922e358d3836ca4090150ceef61fdd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveInc: 0.05
+  moveInc: 3
   wingPivot: {fileID: 531055390}
   rotZ: 21.568
 --- !u!212 &162095119
@@ -2771,7 +2771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b9109ee5677a1d4bb7d0fd2ac16692b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenPanels: 20
+  timeBetweenPanels: 0.5
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -2967,12 +2967,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 531055390}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.33, y: 1.97, z: 0}
+  m_LocalPosition: {x: 10.070717, y: 16.428642, z: 0}
   m_LocalScale: {x: 1.951246, y: 2.071327, z: 1}
   m_Children:
   - {fileID: 725873075}
-  m_Father: {fileID: 1756248029}
-  m_RootOrder: 2
+  m_Father: {fileID: 1925635084}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &543941480
 GameObject:
@@ -7787,7 +7787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17694db5e4b424f4bafa957023789124, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.02
+  moveSpeed: 1
   onTrack: {fileID: 1983640666}
   offTrack: {fileID: 1499246209}
 --- !u!212 &1366801193
@@ -10370,7 +10370,6 @@ Transform:
   m_Children:
   - {fileID: 162095115}
   - {fileID: 1451005843}
-  - {fileID: 531055391}
   m_Father: {fileID: 572987818}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11453,6 +11452,7 @@ Transform:
   - {fileID: 991374564}
   - {fileID: 1955275841}
   - {fileID: 1349843780}
+  - {fileID: 531055391}
   m_Father: {fileID: 572987818}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
