@@ -27,6 +27,7 @@ public class Slideshow : MonoBehaviour, Interactable
 
     public void Activate()
     {
+        Debug.Log("PHONE IS ACTIVATING");
         OnPanel = true;
         if (gameObject.GetComponent<AudioSource>() != null)
             gameObject.GetComponent<AudioSource>().Play();
