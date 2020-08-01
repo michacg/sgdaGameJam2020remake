@@ -5,7 +5,7 @@ using UnityEngine;
 public class LevelUp : MonoBehaviour
 {
     //ya ummm sorry this code is straight up ugly lolm y b<3
-    [SerializeField] private SpriteRenderer m_sprite;
+    private SpriteRenderer m_sprite;
     [SerializeField] private Sprite buttonUp;
     [SerializeField] private Sprite buttonDown;
     [SerializeField] private GameObject ageObj;
@@ -28,7 +28,8 @@ public class LevelUp : MonoBehaviour
     }
 
 
-    private void UpdateAge(){
+    private void UpdateAge()
+    {
         print("age" + age);
         if (age >= (numSprites.Length -1 ))
         {
@@ -48,6 +49,7 @@ public class LevelUp : MonoBehaviour
     private void OnMouseDown()
     {
         Debug.Log("mouse down");
+        gameObject.GetComponent<AudioSource>().Play();
         if (OnPanel)
         {
             m_sprite.sprite = buttonDown;

@@ -19,6 +19,7 @@ public class heartLike : MonoBehaviour
     {
         m_sprite.color = new Color(1, 1, 1, 1f);
         clicked = true;
+        gameObject.GetComponent<AudioSource>().Play();
     }
     private void OnMouseOver()
     {
