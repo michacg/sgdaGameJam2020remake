@@ -14,6 +14,7 @@ public class Chapter5Part1 : MonoBehaviour, Interactable
     [SerializeField] GameObject DownArm;
     [SerializeField] GameObject DownBody;
     [SerializeField] GameObject PicButton;
+    //[SerializeField] GameObject PhoneBG;
 
     void Awake()
     {
@@ -36,6 +37,7 @@ public class Chapter5Part1 : MonoBehaviour, Interactable
 
     IEnumerator StartFS()
     {
+       // PhoneBG.SetActive(true);
         TitleNext.SetActive(false);
         foreach (GameObject g in ObjectsFromTitle)
         {
@@ -47,6 +49,7 @@ public class Chapter5Part1 : MonoBehaviour, Interactable
             g.SetActive(true);
         }
         yield return new WaitForSeconds(1f);
+        
         balloon.gameObject.SetActive(true);
         balloon.StartMovement();
         balloonIG.gameObject.SetActive(true);
@@ -56,6 +59,7 @@ public class Chapter5Part1 : MonoBehaviour, Interactable
 
     void OnMouseDown()
     {
+        //PhoneBG.SetActive(false);
         PicButton.SetActive(false);
         TitleNext.SetActive(true);
         UpArm.SetActive(false);
