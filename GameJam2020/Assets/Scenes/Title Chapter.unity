@@ -2446,7 +2446,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   scenename: Chapter1
-  fadeManager: {fileID: 0}
+  fadeManager: {fileID: 8939566717474868866}
 --- !u!1 &883934532
 GameObject:
   m_ObjectHideFlags: 0
@@ -6997,3 +6997,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7d1634e7af620a4bb0299dc93a68ae9, type: 3}
+--- !u!114 &8939566717474868866 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 89928577, guid: d7d1634e7af620a4bb0299dc93a68ae9,
+    type: 3}
+  m_PrefabInstance: {fileID: 8939566717474868865}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36631a202e871cc40805e1e32de8e9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
