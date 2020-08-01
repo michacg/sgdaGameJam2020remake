@@ -4342,7 +4342,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 527bdce1c9ac5314f927494137267225, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9daa28c1f4cb0f544b5f6328269f340a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -12458,16 +12458,16 @@ MonoBehaviour:
     volume: 0.4
     source: {fileID: 0}
   - audioName: chocobo
-    clip: {fileID: 8300000, guid: 527bdce1c9ac5314f927494137267225, type: 3}
-    volume: 0.3
+    clip: {fileID: 8300000, guid: 9daa28c1f4cb0f544b5f6328269f340a, type: 3}
+    volume: 0.56
     source: {fileID: 0}
   - audioName: msgNotif
-    clip: {fileID: 8300000, guid: add706c40deb6a54a91babca78168e94, type: 3}
-    volume: 0.4
+    clip: {fileID: 8300000, guid: b5b3ff57a38392e41b8f12f771421fa6, type: 3}
+    volume: 0.56
     source: {fileID: 0}
   - audioName: dps
-    clip: {fileID: 8300000, guid: 7e562856a0563e241af976fe082e06c8, type: 3}
-    volume: 0.3
+    clip: {fileID: 8300000, guid: 62b63198f40c841449f7be89b7f2f9c1, type: 3}
+    volume: 0.425
     source: {fileID: 0}
   - audioName: pageFlip
     clip: {fileID: 8300000, guid: 582cef7cc026c3842b984e2593c7692e, type: 3}
@@ -12478,11 +12478,11 @@ MonoBehaviour:
     volume: 0.3
     source: {fileID: 0}
   - audioName: block
-    clip: {fileID: 8300000, guid: 80abbe50685454148842dc589e9ade1a, type: 3}
+    clip: {fileID: 8300000, guid: 39c68aea67f1bc94a8c7db66ffb53ec9, type: 3}
     volume: 0.2
     source: {fileID: 0}
   - audioName: harp
-    clip: {fileID: 8300000, guid: 8dc65b87c4837574db60ce72acae5657, type: 3}
+    clip: {fileID: 8300000, guid: ff69ea262fcb3c441acdc8c690bde7b5, type: 3}
     volume: 0.4
     source: {fileID: 0}
   - audioName: dmg
@@ -12490,15 +12490,15 @@ MonoBehaviour:
     volume: 0.4
     source: {fileID: 0}
   - audioName: buff
-    clip: {fileID: 8300000, guid: 828478e03a5437a49b17a48bba1acc1d, type: 3}
+    clip: {fileID: 8300000, guid: 083e64a3ebeee55458ec1ab26529f7fc, type: 3}
     volume: 0.4
     source: {fileID: 0}
   - audioName: healing
-    clip: {fileID: 8300000, guid: 82da6c8d246e3f448a0ed46d8de3d91e, type: 3}
-    volume: 0.4
+    clip: {fileID: 8300000, guid: 31fa0866f2aa39f4ba78eb813ccb61f1, type: 3}
+    volume: 0.64
     source: {fileID: 0}
   - audioName: slash
-    clip: {fileID: 8300000, guid: 77aebdb4843d67d4e861bbc8d52eed1a, type: 3}
+    clip: {fileID: 8300000, guid: dcbfe42dbfad8d54a8c2bb1251fbd345, type: 3}
     volume: 0.4
     source: {fileID: 0}
   - audioName: keyPress
