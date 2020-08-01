@@ -1036,7 +1036,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   scenename: Chapter4
-  fadeManager: {fileID: 0}
+  fadeManager: {fileID: 8939566717474868866}
 --- !u!212 &410597399
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3053,7 +3053,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   scenename: Chapter5
-  fadeManager: {fileID: 0}
+  fadeManager: {fileID: 8939566717474868866}
 --- !u!212 &956810398
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3343,7 +3343,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   scenename: Chapter1
-  fadeManager: {fileID: 0}
+  fadeManager: {fileID: 8939566717474868866}
 --- !u!212 &1084343896
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5649,7 +5649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   scenename: Chapter3
-  fadeManager: {fileID: 0}
+  fadeManager: {fileID: 8939566717474868866}
 --- !u!212 &1696328308
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6600,7 +6600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   scenename: Chapter2
-  fadeManager: {fileID: 0}
+  fadeManager: {fileID: 8939566717474868866}
 --- !u!212 &2118839531
 SpriteRenderer:
   m_ObjectHideFlags: 0
