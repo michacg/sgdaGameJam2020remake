@@ -616,6 +616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eb66018e82bfbe4aa3f31b00a47cf05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  changeBGM: 0
 --- !u!1 &276074894
 GameObject:
   m_ObjectHideFlags: 0
@@ -1090,6 +1091,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eb66018e82bfbe4aa3f31b00a47cf05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  changeBGM: 0
 --- !u!1 &719186120
 GameObject:
   m_ObjectHideFlags: 0
@@ -2184,6 +2186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eb66018e82bfbe4aa3f31b00a47cf05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  changeBGM: 0
 --- !u!114 &1154550006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2814,20 +2817,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - audioName: carAmbient
-    clip: {fileID: 8300000, guid: 60688c6e489a89244aa2ef731a35ca50, type: 3}
+    clip: {fileID: 8300000, guid: bc5cb52b18fb03f4aa6c3ebf0058a0df, type: 3}
     volume: 0.5
     source: {fileID: 0}
   - audioName: footStep
-    clip: {fileID: 8300000, guid: 8152dcf1b45e0034da6313f0d8e66662, type: 3}
+    clip: {fileID: 8300000, guid: 3b2de006ebd97e74f9897073e11878e3, type: 3}
     volume: 0.3
     source: {fileID: 0}
   - audioName: jumping
-    clip: {fileID: 8300000, guid: e7b327af4839f9949b6fcf9b1cfdeac8, type: 3}
-    volume: 0.5
+    clip: {fileID: 8300000, guid: 4f49d2bc3b4c9264280d7992d5835b07, type: 3}
+    volume: 0.375
     source: {fileID: 0}
   - audioName: timesUp
-    clip: {fileID: 8300000, guid: cd8e1ec9002001640b0938b5b521b42b, type: 3}
-    volume: 0.4
+    clip: {fileID: 8300000, guid: 09f86b796be0857479cc3ef783d70245, type: 3}
+    volume: 0.073
     source: {fileID: 0}
   - audioName: onClick
     clip: {fileID: 8300000, guid: 1dd507152c233fb4c997a9a23ea174eb, type: 3}

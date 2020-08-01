@@ -1827,7 +1827,7 @@ MonoBehaviour:
     volume: 0.302
     source: {fileID: 0}
   - audioName: vendingMachine
-    clip: {fileID: 8300000, guid: c973582686da7f546b8a1fce95deea73, type: 3}
+    clip: {fileID: 8300000, guid: cb856c4723989a44198141f665ebf2d7, type: 3}
     volume: 0.155
     source: {fileID: 0}
 --- !u!4 &703723642
@@ -3413,6 +3413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eb66018e82bfbe4aa3f31b00a47cf05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  changeBGM: 0
 --- !u!1 &1299704583
 GameObject:
   m_ObjectHideFlags: 0
@@ -5864,6 +5865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eb66018e82bfbe4aa3f31b00a47cf05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  changeBGM: 0
 --- !u!1 &1962156465
 GameObject:
   m_ObjectHideFlags: 0
@@ -6585,6 +6587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eb66018e82bfbe4aa3f31b00a47cf05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  changeBGM: 0
 --- !u!1 &2147084777
 GameObject:
   m_ObjectHideFlags: 0
