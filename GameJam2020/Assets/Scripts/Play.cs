@@ -26,8 +26,7 @@ public class Play : MonoBehaviour
         StartCoroutine(TurnOnVendingMachine());
 
         StartCoroutine(Fade(true));
-        StartCoroutine(Fade(false));
-        uiButton.SetActive(false);
+
         drinkSelectButtons.SetActive(true);
     }
 
