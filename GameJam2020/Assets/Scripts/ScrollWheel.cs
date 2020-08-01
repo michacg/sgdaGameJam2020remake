@@ -79,23 +79,23 @@ public class ScrollWheel : MonoBehaviour
         if ((Input.mousePosition.y < posOnClick.y || Input.GetAxis("Vertical") < 0) && transform.position.y >= wheelEndY)
         {
             Vector3 newPos = transform.position;
-            newPos.y -= .005f;
+            newPos.y -= .005f * Time.deltaTime;
             transform.position = newPos;
 
             // List goes up
             Vector3 newPos2 = scrollingList.transform.position;
-            newPos2.y += .01f;
+            newPos2.y += .01f * Time.deltaTime;
             scrollingList.transform.position = newPos2;
         }
         else if (Input.mousePosition.y > posOnClick.y && transform.position.y <= wheelStartY)
         {
             Vector3 newPos = transform.position;
-            newPos.y += .005f;
+            newPos.y += .005f * Time.deltaTime;
             transform.position = newPos;
 
             // List goes Down
             Vector3 newPos2 = scrollingList.transform.position;
-            newPos2.y -= .01f;
+            newPos2.y -= .01f * Time.deltaTime;
             scrollingList.transform.position = newPos2;
         }
         

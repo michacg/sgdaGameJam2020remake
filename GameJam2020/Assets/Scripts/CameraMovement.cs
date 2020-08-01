@@ -37,7 +37,7 @@ public class CameraMovement : MonoBehaviour
         float distance = Vector3.Magnitude(target - this.transform.position);
         while (Vector3.Magnitude(target - this.transform.position) > 0.05f)
         {
-            this.transform.position = Vector3.Lerp(this.transform.position, target, timer / timeBetweenPanels);
+            this.transform.position = Vector3.Lerp(this.transform.position, target, (timer / timeBetweenPanels) * Time.deltaTime);
             yield return null;
             timer += Time.deltaTime;
         }
