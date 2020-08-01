@@ -14,7 +14,6 @@ public class ClickForNextComment : MonoBehaviour
         if (gameObject.GetComponent<AudioSource>() != null)
             gameObject.GetComponent<AudioSource>().Play();
 
-        Debug.Log(this.gameObject.name + " is activated");
         this.GetComponent<BoxCollider2D>().enabled = false;
         GetComponentInParent<Phone>().LoadNextComment();
     }

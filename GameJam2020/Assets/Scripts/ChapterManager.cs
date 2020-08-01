@@ -44,7 +44,6 @@ public class ChapterManager : MonoBehaviour
             Debug.Log("loading panel: " + (index));
         }
         else{
-            Debug.Log("fading");
             fadeManager.gameObject.SetActive(true);
             fadeManager.FadeSceneOut(SceneToLoad);
             //SceneManager.LoadScene(SceneManager.GetSceneByName(SceneToLoad).buildIndex);
@@ -54,7 +53,6 @@ public class ChapterManager : MonoBehaviour
 
     void ActivateNextPanel()
     {
-        Debug.Log("Index: " + index);
         Panels[index].GetComponent<Panel>().Activate();  
     }
 

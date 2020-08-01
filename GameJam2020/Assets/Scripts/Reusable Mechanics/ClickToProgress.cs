@@ -4,14 +4,25 @@ using UnityEngine;
 
 public class ClickToProgress : MonoBehaviour
 {
+    bool BeenClicked = false;
+
+    private void OnEnable()
+    {
+        BeenClicked = false;
+    }
+
     void OnMouseDown()
     {
-        audioManager.instance.Play("onClick");
-        Debug.Log("here");
-        MultiPanel p = GetComponentInParent<MultiPanel>();
-        if(p == null || !p.NextPart())
+        if (!BeenClicked)
         {
-            ChapterManager.instance.NextPanel();
+            BeenClicked = true;
+            audioManager.instance.Play("onClick");
+            MultiPanel p = GetComponentInParent<MultiPanel>();
+            if (p == null || !p.NextPart())
+            {
+                Debug.Log("NO MORE PANELS");
+                ChapterManager.instance.NextPanel();
+            }
         }
        
     }

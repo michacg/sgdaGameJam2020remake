@@ -20,6 +20,7 @@ public class Chapter5Part1 : MonoBehaviour, Interactable
     {
         DownArm.SetActive(false);
         DownBody.SetActive(false);
+        PicButton.SetActive(false);
     }
 
     void Start()
@@ -54,6 +55,7 @@ public class Chapter5Part1 : MonoBehaviour, Interactable
         balloon.StartMovement();
         balloonIG.gameObject.SetActive(true);
         balloonIG.StartMovement();
+        PicButton.SetActive(true);
 
     }
 

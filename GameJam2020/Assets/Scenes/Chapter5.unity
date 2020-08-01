@@ -834,6 +834,7 @@ GameObject:
   m_Component:
   - component: {fileID: 183594963}
   - component: {fileID: 183594964}
+  - component: {fileID: 183594965}
   m_Layer: 0
   m_Name: phoneShell
   m_TagString: Untagged
@@ -906,6 +907,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &183594965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183594962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15a5487ac2dd6e24f99ce2e94e5f2bba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &237339477
 GameObject:
   m_ObjectHideFlags: 0
@@ -2741,11 +2754,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changeBGM: 0
   objects:
-  - {fileID: 806154792}
   - {fileID: 1346005857}
   - {fileID: 986590155}
   - {fileID: 1199459577}
-  - {fileID: 649408290}
 --- !u!1 &969490433
 GameObject:
   m_ObjectHideFlags: 0
@@ -2841,7 +2852,6 @@ GameObject:
   - component: {fileID: 986590157}
   - component: {fileID: 986590159}
   - component: {fileID: 986590160}
-  - component: {fileID: 986590161}
   m_Layer: 0
   m_Name: Phone
   m_TagString: Untagged
@@ -3029,18 +3039,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &986590161
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 986590155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15a5487ac2dd6e24f99ce2e94e5f2bba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &994135300
 GameObject:
   m_ObjectHideFlags: 0
@@ -3902,7 +3900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -4398,8 +4396,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 417, y: -215}
-  m_SizeDelta: {x: 307.69223, y: 149.33435}
+  m_AnchoredPosition: {x: 255, y: -99}
+  m_SizeDelta: {x: 120, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1315628936
 MonoBehaviour:
@@ -4563,7 +4561,6 @@ MonoBehaviour:
   - {fileID: 721900753}
   ObjectsToShow:
   - {fileID: 183594962}
-  - {fileID: 823444249}
   - {fileID: 707232642}
   - {fileID: 126936415}
   - {fileID: 549497073}
@@ -5501,12 +5498,12 @@ PrefabInstance:
     - target: {fileID: 8939566718028607216, guid: d7d1634e7af620a4bb0299dc93a68ae9,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 69.6
       objectReference: {fileID: 0}
     - target: {fileID: 8939566718028607216, guid: d7d1634e7af620a4bb0299dc93a68ae9,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -66.8
       objectReference: {fileID: 0}
     - target: {fileID: 8939566718028607216, guid: d7d1634e7af620a4bb0299dc93a68ae9,
         type: 3}
@@ -5556,7 +5553,7 @@ PrefabInstance:
     - target: {fileID: 8939566718028607217, guid: d7d1634e7af620a4bb0299dc93a68ae9,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7d1634e7af620a4bb0299dc93a68ae9, type: 3}
@@ -5713,11 +5710,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   balloon: {fileID: 1146921276}
-  TargetX: 0
+  TargetX: -1.8
   MoveSpeed: 5
   ObjectsToFadeIn:
   - {fileID: 416439324}
   - {fileID: 2123523758}
+  - {fileID: 1448838024}
   Next: {fileID: 1448838024}
 --- !u!114 &1762858463
 MonoBehaviour:
@@ -6328,7 +6326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShouldMove: 1
   Speed: 3
-  Minimum: -25
+  Minimum: -50
 --- !u!1 &2002861542
 GameObject:
   m_ObjectHideFlags: 0
