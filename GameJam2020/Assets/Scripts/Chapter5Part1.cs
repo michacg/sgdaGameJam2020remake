@@ -21,6 +21,7 @@ public class Chapter5Part1 : MonoBehaviour, Interactable
         DownArm.SetActive(false);
         DownBody.SetActive(false);
         PicButton.SetActive(false);
+        this.GetComponent<BoxCollider2D>().enabled = false;
     }
 
     void Start()
@@ -56,6 +57,7 @@ public class Chapter5Part1 : MonoBehaviour, Interactable
         balloonIG.gameObject.SetActive(true);
         balloonIG.StartMovement();
         PicButton.SetActive(true);
+        this.GetComponent<BoxCollider2D>().enabled = true;
 
     }
 
