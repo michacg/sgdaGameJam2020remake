@@ -47,6 +47,9 @@ public class Phone : MonoBehaviour, Interactable
      
     void OnMouseDown()
     {
+        if (gameObject.GetComponent<AudioSource>() != null)
+            gameObject.GetComponent<AudioSource>().Play();
+
         foreach (GameObject g in ObjectsToDeactivate)
         {
             g.SetActive(false);

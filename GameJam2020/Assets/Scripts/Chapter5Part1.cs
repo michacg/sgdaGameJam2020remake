@@ -59,6 +59,10 @@ public class Chapter5Part1 : MonoBehaviour, Interactable
 
     void OnMouseDown()
     {
+
+        if (gameObject.GetComponent<AudioSource>() != null)
+            gameObject.GetComponent<AudioSource>().Play();
+        
         //PhoneBG.SetActive(false);
         PicButton.SetActive(false);
         TitleNext.SetActive(true);
