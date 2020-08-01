@@ -10927,7 +10927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f3b84c4bfa9c51428c68b4556f8c051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  refillInc: 0.1
+  refillInc: 0.05
   cooldown: 0.1
 --- !u!212 &1890474377
 SpriteRenderer:
