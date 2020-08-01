@@ -6,8 +6,13 @@ public class ClickToProgress : MonoBehaviour
 {
     void OnMouseDown()
     {
-       audioManager.instance.Play("onClick");
+        audioManager.instance.Play("onClick");
         Debug.Log("here");
-        ChapterManager.instance.NextPanel();
+        MultiPanel p = GetComponentInParent<MultiPanel>();
+        if(p == null || !p.NextPart())
+        {
+            ChapterManager.instance.NextPanel();
+        }
+       
     }
 }
