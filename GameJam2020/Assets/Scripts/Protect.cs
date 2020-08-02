@@ -5,6 +5,7 @@ using UnityEngine;
 public class Protect : MonoBehaviour
 {
     [SerializeField] private float moveInc;
+    [SerializeField] private float speed;
     [SerializeField] private GameObject wingPivot;
     [SerializeField] private float rotZ;
 
@@ -23,7 +24,11 @@ public class Protect : MonoBehaviour
             newPos.x += moveInc;
 
             if (wingPivot.transform.rotation != Quaternion.Euler(new Vector3(0, 0, rotZ)))
-                transform.position = newPos;
+            {
+                transform.position = Vector2.Lerp(transform.position, newPos, speed * Time.deltaTime);
+                // transform.position = newPos;
+            }
+
         }
     }
 
